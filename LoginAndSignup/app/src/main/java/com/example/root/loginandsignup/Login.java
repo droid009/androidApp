@@ -19,7 +19,7 @@ public class Login extends AppCompatActivity {
     private AwesomeValidation awesomeValidation;
 
     EditText Email, Password;
-    TextView SignUp;
+    TextView SignUp, ForgetPassword;
     Button Login;
     CheckBox ShowHide;
     ImageButton CLoseBtn;

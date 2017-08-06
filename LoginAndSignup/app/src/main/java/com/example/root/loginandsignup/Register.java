@@ -65,7 +65,17 @@ public class Register extends AppCompatActivity {
         } else {
             Password.setError(null);
         }
-
+        if (!phone.matches("[a-zA-Z]+")) {
+            if (phone.length() != 10) {
+                // if(phone.length() != 10) {
+                valid = false;
+                Phone.setError("Please Enter 10 Digit Number  ");
+            } else {
+                valid = true;
+            }
+        } else {
+            valid = false;
+        }
         return valid;
     }
 }
